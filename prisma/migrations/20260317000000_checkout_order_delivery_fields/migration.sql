@@ -1,0 +1,7 @@
+ALTER TABLE "Order"
+ADD COLUMN "paidAt" TIMESTAMP(3);
+
+ALTER TABLE "Delivery"
+ADD COLUMN "externalOrderId" TEXT,
+ADD COLUMN "lastError" TEXT,
+ADD COLUMN "deliveredAt" TIMESTAMP(3);
